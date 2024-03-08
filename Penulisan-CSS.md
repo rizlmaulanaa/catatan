@@ -61,6 +61,35 @@ header.navbar-container .nav-list li:hover a{
     color: white;
 }
 ```
+Pada CSS, pengaturan spasi antara elemen-elemen dapat mempengaruhi tampilan dan struktur halaman web. Mari kita bahas perbedaan antara dua contoh kode CSS yang Anda berikan:
+```CSS
+header.navbar-container .nav-list ul{}:
+```
+Pada contoh ini, tidak ada spasi setelah “header” dan "navbar-container". Ini berarti bahwa semua elemen dengan kelas “nav-list” yang berada di bawah elemen “navbar-container” akan terpengaruh oleh aturan ini.
+Misalnya, jika Anda memiliki HTML seperti berikut:
+```HTML
+<header class="navbar-container">
+    <ul class="nav-list">
+        <!-- Isi elemen ul -->
+    </ul>
+</header>
+```
+Maka aturan CSS ini akan diterapkan pada elemen ul di dalam header.
+```CSS
+main .content .content-description{}
+```
+Pada contoh ini, ada spasi setelah “main”. Ini berarti bahwa aturan CSS ini hanya berlaku untuk elemen .content-description yang berada di bawah elemen main.
+Misalnya, jika Anda memiliki HTML seperti berikut:
+```HTML
+<main>
+    <div class="content">
+        <p class="content-description">
+            <!-- Isi konten -->
+        </p>
+    </div>
+</main>
+```
+Maka aturan CSS ini akan diterapkan pada elemen "p" dengan kelas ".content-description" yang berada di dalam "main".
 ## ID SELECTOR
 ini untuk penulisan ID misal = ```<div id="special"> ```
 ```CSS
